@@ -267,7 +267,7 @@ function endQuiz() {
 
 
     let fetchDataPersonality =
-        fetch('http://acnhapi.com/v1/villagers')
+        fetch('https://acnhapi.com/v1/villagers')
             .then((response) => response.json())
             .then((json) => {
                 // console.log(json)

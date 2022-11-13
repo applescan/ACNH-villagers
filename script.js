@@ -14,7 +14,7 @@ for (i = 0; i < acc.length; i++) {
 }
 
 let fetchData =
-    fetch('http://acnhapi.com/v1/villagers')
+    fetch('https://acnhapi.com/v1/villagers')
         .then((response) => response.json())
         .then((json) => {
             console.log(json)
@@ -53,7 +53,7 @@ function addCard(name, personality, saying, url, gender, species, bday) {
 
 
 let fetchDataGender =
-    fetch('http://acnhapi.com/v1/villagers')
+    fetch('https://acnhapi.com/v1/villagers')
         .then((response) => response.json())
         .then((json) => {
             console.log(json)
@@ -116,7 +116,7 @@ function genderFemale(name, personality, saying, url, gender, species, bday) {
 
 
 let fetchDataPersonality =
-    fetch('http://acnhapi.com/v1/villagers')
+    fetch('https://acnhapi.com/v1/villagers')
         .then((response) => response.json())
         .then((json) => {
             console.log(json)
