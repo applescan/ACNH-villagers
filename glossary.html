@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Who’s your villager in animal crossing? </title>
+
+</head>
+
+<body>
+
+    <!-- Image and text -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+
+            <img src="images/logo.png" width="auto" height="80" class="d-inline-block align-top" alt="logo">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">App </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="glossary.html">Glossary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Graph</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">
+
+        <h1>Welcome to Animal Crossing Library</h1>
+        <br>
+        <br>
+
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-outline-primary"><label for="div1">All Villagers</label></button>
+            <button type="button" class="btn btn-outline-primary"><label for="div2">Personality</label></button>
+            <button type="button" class="btn btn-outline-primary"><label for="div3">Gender</label></button>
+            <!-- active class when clicked -->
+        </div>
+
+
+        <section>
+            <input type="radio" id="div1" name="tab-nav" checked />
+            <div class="display">
+                <br>
+                <br>
+                <h3>All Villagers</h3>
+                <br>
+                <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row"></div>
+            </div>
+        </section>
+
+        <section>
+            <input type="radio" id="div3" name="tab-nav" />
+            <div class="display">
+                <br>
+                <br>
+                <h3>Villagers by Gender</h3>
+                <br>
+                <button class="accordion">Male</button>
+                <div class="panel">
+                    <br>
+                    <h3>Male</h3>
+                    <br>
+                    <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-genderMale">
+                    </div>
+                </div>
+
+                <button class="accordion">Female</button>
+                <div class="panel">
+                    <br>
+                    <h3>Female</h3>
+                    <br>
+                    <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-genderFemale">
+                    </div>
+                </div>
+        </section>
+
+        <section>
+            <input type="radio" id="div2" name="tab-nav" />
+            <div class="display">
+                <br>
+                <br>
+                <h3>Villagers by Personality</h3>
+                <br>
+                <button class="accordion">Normal</button>
+                <div class="panel">
+                    <br>
+                    <h3>Normal</h3>
+                    <br>
+                    <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-personalityNormal">
+                    </div>
+                </div>
+
+                <button class="accordion">Peppy</button>
+                <div class="panel">
+                    <br>
+                    <h3>Peppy</h3>
+                    <br>
+                    <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-personalityPeppy">
+                    </div>
+                </div>
+
+                <button class="accordion">Snooty</button>
+                <div class="panel">
+                    <br>
+                    <h3>Snooty</h3>
+                    <br>
+                    <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-personalitySnooty">
+                    </div>
+                </div>
+
+                <button class="accordion">Uchi</button>
+                <div class="panel">
+                    <br>
+                    <h3>Uchi</h3>
+                    <br>
+                    <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-personalityUchi">
+                    </div>
+                </div>
+
+                <button class="accordion">Lazy</button>
+                <div class="panel">
+                    <br>
+                    <h3>Lazy</h3>
+                    <br>
+                    <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-personalityLazy">
+                    </div>
+                </div>
+
+                <button class="accordion">Jock</button>
+                <div class="panel">
+                    <br>
+                    <h3>Jock</h3>
+                    <br>
+                    <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-personalityJock">
+                    </div>
+                </div>
+
+                <button class="accordion">Cranky</button>
+                <div class="panel">
+                    <br>
+                    <h3>Cranky</h3>
+                    <br>
+                    <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-personalityCranky">
+                    </div>
+                </div>
+
+                <button class="accordion">Smug</button>
+                <div class="panel">
+                    <br>
+                    <h3>Smug</h3>
+                    <br>
+                    <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-personalitySmug">
+                    </div>
+                </div>
+        </section>
+
+    </div>
+    </div>
+
+    <template id="card-template">
+        <div class="col mb-4">
+            <div id="card-list">
+                <div class="card">
+                    <img class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-title"></div>
+                        <div class="card-text"></div>
+                        <p class="card-p"></p>
+                    </div>
+                </div>
+    </template>
+
+    <template id="card-template-genderMale">
+        <div class="col mb-4">
+            <div id="card-list">
+                <div class="card h-100">
+                    <img class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-title"></div>
+                        <div class="card-text"></div>
+                        <p class="card-p"></p>
+                    </div>
+                </div>
+    </template>
+
+    <template id="card-template-genderFemale">
+        <div class="col mb-4">
+            <div id="card-list">
+                <div class="card h-100">
+                    <img class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-title"></div>
+                        <div class="card-text"></div>
+                        <p class="card-p"></p>
+                    </div>
+                </div>
+    </template>
+
+
+    <template id="card-template-personalityNormal">
+        <div class="col mb-4">
+            <div id="card-list">
+                <div class="card h-100">
+                    <img class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-title"></div>
+                        <div class="card-text"></div>
+                        <p class="card-p"></p>
+                    </div>
+                </div>
+    </template>
+
+    <template id="card-template-personalityPeppy">
+        <div class="col mb-4">
+            <div id="card-list">
+                <div class="card h-100">
+                    <img class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-title"></div>
+                        <div class="card-text"></div>
+                        <p class="card-p"></p>
+                    </div>
+                </div>
+    </template>
+
+    <template id="card-template-personalitySnooty">
+        <div class="col mb-4">
+            <div id="card-list">
+                <div class="card h-100">
+                    <img class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-title"></div>
+                        <div class="card-text"></div>
+                        <p class="card-p"></p>
+                    </div>
+                </div>
+    </template>
+
+    <template id="card-template-personalityUchi">
+        <div class="col mb-4">
+            <div id="card-list">
+                <div class="card h-100">
+                    <img class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-title"></div>
+                        <div class="card-text"></div>
+                        <p class="card-p"></p>
+                    </div>
+                </div>
+    </template>
+
+    <template id="card-template-personalityLazy">
+        <div class="col mb-4">
+            <div id="card-list">
+                <div class="card h-100">
+                    <img class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-title"></div>
+                        <div class="card-text"></div>
+                        <p class="card-p"></p>
+                    </div>
+                </div>
+    </template>
+
+    <template id="card-template-personalityJock">
+        <div class="col mb-4">
+            <div id="card-list">
+                <div class="card h-100">
+                    <img class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-title"></div>
+                        <div class="card-text"></div>
+                        <p class="card-p"></p>
+                    </div>
+                </div>
+    </template>
+
+    <template id="card-template-personalityCranky">
+        <div class="col mb-4">
+            <div id="card-list">
+                <div class="card h-100">
+                    <img class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-title"></div>
+                        <div class="card-text"></div>
+                        <p class="card-p"></p>
+                    </div>
+                </div>
+    </template>
+
+    <template id="card-template-personalitySmug">
+        <div class="col mb-4">
+            <div id="card-list">
+                <div class="card h-100">
+                    <img class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-title"></div>
+                        <div class="card-text"></div>
+                        <p class="card-p"></p>
+                    </div>
+                </div>
+    </template>
+
+</body>
+
+</html>
