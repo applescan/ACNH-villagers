@@ -168,6 +168,7 @@ p {
 .navbar {
     background-image: url("images/tree.png");
     background-repeat: no-repeat;
+background-size: cover;
     color: var(--primary-green);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 14px 0 rgba(0, 0, 0, 0.1);
     padding-top: 80px;
@@ -330,6 +331,7 @@ input {
     width: 100%;
     background-image: url("images/footer.png");
     background-repeat: no-repeat;
+background-size: cover;
     color: var(--primary-green);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 14px 0 rgba(0, 0, 0, 0.1);
     padding: 13px 0;
