@@ -3,3 +3,6 @@ A quiz app matching you with a villager from the famous game Animal Crossing! Th
 
 ### Webpage
 https://applescan.github.io/ACNH-villagers/
+
+### Figma
+https://www.figma.com/file/8NP8ERqJ5JLHb2bikHUUco/Untitled?node-id=0%3A1
