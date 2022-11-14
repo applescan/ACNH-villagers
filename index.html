@@ -46,7 +46,7 @@
                         <a class="nav-link " aria-current="page" href="glossary.html">Glossary</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Graph</a>
+                        <a class="nav-link" href="graph.html">Graph</a>
                     </li>
                 </ul>
             </div>
@@ -58,12 +58,13 @@
         <main id="quiz-container">
             <div id="intro">
                 <h1>Who's your animal crossing best friend?</h1>
-                <p>Find out who's your new best friend by doing this simple quiz!</p>
+                <p>Find out who's your new best friend by answering a few questions!</p>
                 <br>
                 <br>
                 <img src="images/Player2.webp" class="home-icon">
                 <button id="beginquiz" class="btn btn-outline-primary">Start the quiz</button>
                 <img src="images/Player.webp" class="home-icon2">
+
 
             </div>
 
@@ -85,19 +86,21 @@
             <div id="result">
                 <h2>Meet your new best friend!</h2>
                 <p class="resultText"></p>
-                <br><br>
-                <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-personalityNormal"></div>
-                <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-personalityCranky"></div>
-                <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-personalityPeppy"></div>
-                <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-personalitySnooty"></div>
-                <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-personalityUchi"></div>
-                <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-personalityLazy"></div>
-                <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-personalityJock"></div>
-                <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3" id="main-row-personalitySmug"></div>
+                <br>
+                <div class="mx-auto" id="main-row-personalityNormal"></div>
+                <div class="mx-auto" id="main-row-personalityCranky"></div>
+                <div class="mx-auto" id="main-row-personalityPeppy"></div>
+                <div class="mx-auto" id="main-row-personalitySnooty"></div>
+                <div class="mx-auto" id="main-row-personalityUchi"></div>
+                <div class="mx-auto" id="main-row-personalityLazy"></div>
+                <div class="mx-auto" id="main-row-personalityJock"></div>
+                <div class="mx-auto" id="main-row-personalitySmug"></div>
                 <button id="restart" onClick="window.location.reload();"
                     class="btn btn-outline-primary">Restart</button>
             </div>
         </main>
+
+
 
         <template id="card-template-personalityNormal">
             <div class="col mb-4">
@@ -202,7 +205,11 @@
                         </div>
                     </div>
         </template>
-
+    </div>
+    
+    <div class="footer">
+        <p>Created by Felicia Fel | © Acnh Villagers 2023 🛸</p>
+    </div>
 </body>
 
 </html>

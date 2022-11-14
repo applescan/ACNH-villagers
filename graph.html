@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="graph.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Census Data</title>
+
+</head>
+
+<body>
+
+    <!-- Image and text -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+
+            <img src="images/logo.png" width="auto" height="80" class="d-inline-block align-top" alt="logo">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">App </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="glossary.html">Glossary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="graph.html">Graph</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">
+        <h1>Villagers Census Data</h1>
+        <br>
+        <br>
+
+        <div class="chart-container">
+            <div class="chart">
+                <h3>Personalities</h3>
+                <br>
+                <canvas id="myChart"> </canvas>
+            </div>
+            <div class="chart">
+                <h3>Hobbies</h3>
+                <br>
+                <canvas id="myChart2"> </canvas>
+            </div>
+            <div class="chart">
+                <h3>Gender</h3>
+                <br>
+                <canvas id="myChart3"> </canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Created by Felicia Fel | © Acnh Villagers 2023 🛸</p>
+    </div>
+</body>
+
+</html>

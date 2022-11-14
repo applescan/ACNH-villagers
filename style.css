@@ -19,6 +19,7 @@ body {
     background-image: url("images/bg.jpg");
     font-family: 'Fredoka One', cursive;
     color: #41504D;
+    min-height: 100vh;
 }
 
 @keyframes bounce {
@@ -70,7 +71,7 @@ h1 {
 }
 
 .container-fluid {
-    padding: 5%;
+    padding: 5% 10%;
     align-items: center;
     text-align: center;
 }
@@ -117,14 +118,55 @@ p {
     margin: 10px 0;
 }
 
-.row{
-    align-items: center;
+.row {
     text-align: center;
+}
+
+.mx-auto {
+    width: 40vh;
+    backface-visibility: visible !important;
+    animation: flip 3.5s ease-out infinite;
+}
+
+@keyframes flip {
+    0% {
+        transform: perspective(1500px) rotateY(0);
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        transform: perspective(1500px) translateZ(150px) rotateY(170deg);
+        animation-timing-function: ease-out;
+    }
+
+    20% {
+        transform: perspective(1500px) translateZ(150px) rotateY(190deg) scale(1);
+        animation-timing-function: ease-in;
+    }
+
+    30% {
+        transform: perspective(1500px) scale(1);
+        animation-timing-function: ease-in;
+    }
+
+    40% {
+        transform: perspective(1500px) scale(1);
+        animation-timing-function: ease-in;
+    }
+
+    80% {
+        transform: perspective(1500px) scale(1);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: perspective(1500px) scale(1);
+        animation-timing-function: ease-in;
+    }
 }
 
 .navbar {
     background-image: url("images/tree.png");
-    /* background-color: var(--main-bg-color); */
     background-repeat: no-repeat;
     color: var(--primary-green);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 14px 0 rgba(0, 0, 0, 0.1);
@@ -237,14 +279,72 @@ input {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin: 20px 0;
+    margin: 20px 20%;
 }
 
 #beginquiz {
     margin: 10%
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: none;
+    background-image: url("images/button.jpg");
+    background-size: contain;
+    color: var(--primary-green);
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-image: url("images/button.jpg");
+    background-size: contain;
+}
+
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: auto;
+    height: auto;
+    justify-content: space-evenly;
+    /* width: 45vw; */
+}
+
+.chart {
+    width: 20vw;
+    margin: 2%
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url("images/footer.png");
+    background-repeat: no-repeat;
+    color: var(--primary-green);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 14px 0 rgba(0, 0, 0, 0.1);
+    padding: 13px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+
 @media only screen and (max-width: 700px) {
+    .container-fluid {
+        padding: 5%;
+        align-items: center;
+        text-align: center;
+    }
+
     h1 {
         margin: 10%;
         font-family: stella;
@@ -268,5 +368,38 @@ input {
         flex-wrap: inherit;
         align-items: center;
         justify-content: space-evenly;
+    }
+
+    .choices {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px 10%;
+    }
+
+    .chart-container {
+        position: relative;
+        margin: auto;
+        height: auto;
+        width: 80vw;
+    }
+
+    .chart {
+        width: 80vw;
+        margin: 10%
+    }
+
+    .mx-auto {
+        width: 30vh;
+        backface-visibility: visible !important;
+        animation: flip 3.5s ease-out infinite;
+    }
+
+    .footer {
+        position: relative;
+    }
+
+    .footer>p {
+        font-size: 12px;
     }
 }
