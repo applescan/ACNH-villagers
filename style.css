@@ -372,7 +372,7 @@ input {
     .navbar {
         background-image: url("images/tree.png");
         background-repeat: no-repeat;
-        background-size: 700% 80%;
+        background-size: 550% 80%;
         color: var(--primary-green);
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 14px 0 rgba(0, 0, 0, 0.1);
         padding-top: 80px;
